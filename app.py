@@ -25,7 +25,7 @@ def predict():
     '''
     features = [x for x in request.form.values()]
     #Conversion of year to age
-    features[0] = 2021- int(features[0])
+    features[0] = 2024- int(features[0])
     # 1(mileage), 2(gas_mileage),3(num_features) no change
     for i in range(1,4):
         features[i]= int(features[i])
